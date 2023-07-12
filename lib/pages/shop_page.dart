@@ -16,13 +16,17 @@ class _ShopPageState extends State<ShopPage> {
   //go to order page
   void goToOrderPage(Pizza pizza) {
     //navigate to order page
-    Navigator.push(context, MaterialPageRoute(builder: (context) => OrderPage(pizza: pizza),
-    ));
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OrderPage(pizza: pizza),
+        ));
   }
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<PizzaApp>(builder: (context, value, child) =>  SafeArea(
+    return Consumer<PizzaApp>(
+      builder: (context, value, child) => SafeArea(
         child: Padding(
           padding: EdgeInsets.all(25.0),
           child: Column(
@@ -32,7 +36,11 @@ class _ShopPageState extends State<ShopPage> {
                 "PizzaApp Shop",
                 style: TextStyle(fontSize: 20, color: Colors.deepOrangeAccent),
               ),
-              
+
+              const SizedBox(
+                height: 15,
+              ),
+
               // list of pizzas for sale
               Expanded(
                 child: ListView.builder(
@@ -41,10 +49,13 @@ class _ShopPageState extends State<ShopPage> {
                     //get individual pizza from shop
                     Pizza individualPizza = value.shop[index];
                     //return that pizza as a nice tile
-                    return PizzaTile(pizza: individualPizza,onTap:() => goToOrderPage(individualPizza), 
+                    return PizzaTile(
+                      pizza: individualPizza,
+                      onTap: () => goToOrderPage(individualPizza),
+                      trailing: Icon(Icons.arrow_forward),
                     );
-                  },                
-              ),
+                  },
+                ),
               )
             ],
           ),

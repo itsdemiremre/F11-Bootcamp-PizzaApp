@@ -4,8 +4,13 @@ import 'package:pizza_app/models/pizza.dart';
 class PizzaTile extends StatelessWidget {
   final Pizza pizza;
   void Function()? onTap;
+  final Widget trailing;
 
-   PizzaTile({super.key, required this.pizza, required this.onTap,
+  PizzaTile({
+    super.key,
+    required this.pizza,
+    required this.onTap,
+    required this.trailing,
   });
 
   @override
@@ -13,14 +18,14 @@ class PizzaTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        decoration: BoxDecoration(color: Colors.white,
-        borderRadius: BorderRadius.circular(4)
-        ),
+        margin: EdgeInsets.only(bottom: 15),
+        decoration: BoxDecoration(
+            color: Colors.white, borderRadius: BorderRadius.circular(4)),
         child: ListTile(
           title: Text(pizza.name),
           subtitle: Text(pizza.price),
           leading: Image.asset(pizza.image),
-          trailing: Icon(Icons.arrow_forward_rounded),
+          trailing: trailing,
         ),
       ),
     );
