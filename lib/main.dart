@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:pizza_app/models/shop.dart';
 import 'package:pizza_app/pages/onboarding_screen.dart';
-import 'pages/home_page.dart';
-
+import 'package:provider/provider.dart';
 Future <void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -14,9 +14,14 @@ class PizzApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return ChangeNotifierProvider(create: (context) => PizzaApp(),
+    builder: (context, child) => MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      theme: ThemeData(primarySwatch: Colors.amber),
+      home: const OnboardingScreen(),
+    ),
     );
   }
 }
+
+//

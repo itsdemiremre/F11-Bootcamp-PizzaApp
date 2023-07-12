@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'pizza.dart';
 
-class PizzaApp {
+class PizzaApp extends ChangeNotifier{
   // list of pizzas for sale
   final List<Pizza> _shop = [
     // mixed pizza
@@ -23,10 +24,12 @@ class PizzaApp {
   // add pizza to cart
   void addToCart(Pizza pizza) {
     _userCart.add(pizza);
+    notifyListeners();
   }
 
   // remove drink from cart
   void removeFromCart(Pizza pizza) {
     _userCart.remove(pizza);
+        notifyListeners();
   }
 }
