@@ -45,7 +45,7 @@ class _CartPageState extends State<CartPage> {
                       ),
                     ),
                     MaterialButton(
-                      child: Text("Pay"),
+                      child: Text("Order and Ask for the Check"),
                       color: Colors.amber,
                       onPressed: () {},
                     )

@@ -62,118 +62,121 @@ class _OrderPageState extends State<OrderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.pizza.name),
+        title: Center(child: Text(widget.pizza.name)),
+
       ),
       backgroundColor: Color.fromARGB(255, 87, 98, 133),
-      body: Column(
-        children: [
-          //pizza image
-          Image.asset(widget.pizza.image),
-          //slider to costumize Pizza igredients
-
-          Padding(
-            padding: const EdgeInsets.all(25.0),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      child: Text("thickness of dough"),
-                    ),
-                    Expanded(
-                      child: Slider(
-                          value: thicknessValue,
-                          label: thicknessValue.toString(),
-                          divisions: 2,
-                          onChanged: (value) => customizeThickness(value)),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      child: Text("Pepperoni"),
-                    ),
-                    Expanded(
-                      child: Slider(
-                          value: pepperoniValue,
-                          label: pepperoniValue.toString(),
-                          divisions: 1,
-                          onChanged: (value) => customizdePepperoni(value)),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      child: Text("Green Pepper"),
-                    ),
-                    Expanded(
-                      child: Slider(
-                          value: greenPepperValue,
-                          label: greenPepperValue.toString(),
-                          divisions: 1,
-                          onChanged: (value) => customizdeGreenPepper(value)),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      child: Text("Olive"),
-                    ),
-                    Expanded(
-                      child: Slider(
-                          value: oliveValue,
-                          label: oliveValue.toString(),
-                          divisions: 1,
-                          onChanged: (value) => customizdeOlive(value)),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      child: Text("Mushroom"),
-                    ),
-                    Expanded(
-                      child: Slider(
-                          value: mushroomValue,
-                          label: mushroomValue.toString(),
-                          divisions: 1,
-                          onChanged: (value) => customizdeMushroom(value)),
-                    ),
-                  ],
-                )
-              ],
-            ),
-          ),
-
-          SizedBox(
-            width: 200,
-            child: Expanded(
-              child: ElevatedButton(
-                child: Text("Add to card"),
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            //pizza image
+            Image.asset(widget.pizza.image),
+            //slider to costumize Pizza igredients
+      
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        child: Text("Thickness of the Dough"),
+                      ),
+                      Expanded(
+                        child: Slider(
+                            value: thicknessValue,
+                            label: thicknessValue.toString(),
+                            divisions: 2,
+                            onChanged: (value) => customizeThickness(value)),
+                      ),
+                    ],
                   ),
-                ),
-                onPressed: addToCart,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        child: Text("Pepperoni"),
+                      ),
+                      Expanded(
+                        child: Slider(
+                            value: pepperoniValue,
+                            label: pepperoniValue.toString(),
+                            divisions: 1,
+                            onChanged: (value) => customizdePepperoni(value)),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        child: Text("Green Pepper"),
+                      ),
+                      Expanded(
+                        child: Slider(
+                            value: greenPepperValue,
+                            label: greenPepperValue.toString(),
+                            divisions: 1,
+                            onChanged: (value) => customizdeGreenPepper(value)),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        child: Text("Olive"),
+                      ),
+                      Expanded(
+                        child: Slider(
+                            value: oliveValue,
+                            label: oliveValue.toString(),
+                            divisions: 1,
+                            onChanged: (value) => customizdeOlive(value)),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        child: Text("Mushroom"),
+                      ),
+                      Expanded(
+                        child: Slider(
+                            value: mushroomValue,
+                            label: mushroomValue.toString(),
+                            divisions: 1,
+                            onChanged: (value) => customizdeMushroom(value)),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
-          )
-        ],
+      
+            SizedBox(
+              width: 150,
+              child: Expanded(
+                child: ElevatedButton(
+                  child: Text("Add to card"),
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  onPressed: addToCart,
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

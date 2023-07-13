@@ -3,10 +3,10 @@ import 'package:pizza_app/models/pizza.dart';
 
 class PizzaTile extends StatelessWidget {
   final Pizza pizza;
-  void Function()? onTap;
+  final void Function()? onTap;
   final Widget trailing;
 
-  PizzaTile({
+  const PizzaTile({
     super.key,
     required this.pizza,
     required this.onTap,
@@ -18,7 +18,7 @@ class PizzaTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        margin: EdgeInsets.only(bottom: 15),
+        margin: const EdgeInsets.only(bottom: 15),
         decoration: BoxDecoration(
             color: Colors.white, borderRadius: BorderRadius.circular(4)),
         child: ListTile(

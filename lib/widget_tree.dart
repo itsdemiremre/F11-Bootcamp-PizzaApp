@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'pages/home_screen.dart';
-import 'pages/login_register_screen.dart';
-import '../auth.dart';
+import 'package:pizza_app/pages/home_page.dart';
+import 'introAndAuthPages/login_register_screen.dart';
+import 'introAndAuthPages/auth.dart';
 
 class WidgetTree extends StatefulWidget {
   const WidgetTree({super.key});
@@ -17,9 +17,9 @@ class _WidgetTreeState extends State<WidgetTree> {
       stream: Auth().authStateChanges,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return HomeScreen();
+          return HomePage();
         } else {
-          return LoginPage();
+          return const LoginPage();
         }
       },
     );

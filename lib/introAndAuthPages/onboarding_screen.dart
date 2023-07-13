@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '/introScreens/intro_page_1.dart';
-import '/introScreens/intro_page_2.dart';
-import '/introScreens/intro_page_3.dart';
+import 'intro_pages.dart';
 import '/widget_tree.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -12,7 +10,7 @@ class OnboardingScreen extends StatefulWidget {
 }
 class _OnboardingScreenState extends State<OnboardingScreen> {
   //hangi sayfada olduğumuzu takip etmek için controller.
-  PageController _controller = PageController();
+ final PageController _controller = PageController();
   //son sayfada mıyız değil miyiz takibini tutma.
   bool onLastPage = false; 
 
@@ -29,7 +27,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 onLastPage = (index == 2);
               });
             },
-            children: [
+            children: const [
              IntroPage1(),
              IntroPage2(),
              IntroPage3(),
@@ -46,7 +44,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onPressed: () { 
                     _controller.jumpToPage(2);            
                     },
-                  child: Text("Skip"),
+                  child: const Text("Skip"),
                   ),
                 //nokta indicator
                 SmoothPageIndicator(controller: _controller, count: 3),
@@ -58,14 +56,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                    )
                   );
                  },
-                  child: Text("Done"),
+                  child: const Text("Done"),
                   )
                   : TextButton(
                   onPressed: () { 
                     _controller.nextPage(
-                    duration: Duration(milliseconds: 20), 
+                    duration: const Duration(milliseconds: 20), 
                     curve: Curves.easeInCirc); },
-                  child: Text("Next"),
+                  child: const Text("Next"),
                   ),
               ],
             ))
