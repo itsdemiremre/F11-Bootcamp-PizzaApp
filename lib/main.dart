@@ -17,7 +17,17 @@ class PizzApp extends StatelessWidget {
     return ChangeNotifierProvider(create: (context) => PizzaApp(),
     builder: (context, child) => MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+    primarySwatch: Colors.green,
+    inputDecorationTheme: const InputDecorationTheme(
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 3, color: Colors.green),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 3, color: Colors.amber),
+      ),
+    ),
+  ),
       home: const OnboardingScreen(),
     ),
     );

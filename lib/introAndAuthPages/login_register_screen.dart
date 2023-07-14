@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _title() {
-    return Center(child: const Text("Pizza App",style: TextStyle(color: Colors.orange),));
+    return Center(child: const Text("Pizza App",style: TextStyle(color: Colors.amber),));
   }
 
   Widget _entryField(
@@ -50,9 +50,14 @@ class _LoginPageState extends State<LoginPage> {
   ) {
     return TextField(
       controller: controller,
-      decoration: InputDecoration(labelText: title,  enabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(
-          width: 3, color: Colors.white)),
+      decoration: InputDecoration(
+      labelText: title,
+       labelStyle: const TextStyle(color: Colors.white),
+      enabledBorder: OutlineInputBorder( 
+      borderRadius: BorderRadius.circular(15.0),
+       borderSide: const BorderSide(
+          width: 3, color: Colors.green)),
+      
     ));
   }
 
@@ -64,18 +69,26 @@ class _LoginPageState extends State<LoginPage> {
       obscureText: true,
       obscuringCharacter: "*",
       controller: controller,
-      decoration: InputDecoration(labelText: title,  enabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(
-          width: 3, color: Colors.white)),
+      decoration: InputDecoration(
+        labelText: title, labelStyle: const TextStyle(color: Colors.white),  enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(15.0),
+      borderSide: const BorderSide(
+          width: 3, color: Colors.green)
+      ),
     ));
   }
 
   Widget _errorMessage() {
-    return Text(errorMessage == "" ? "" : "Humm ? $errorMessage",style: TextStyle(color: Colors.white,backgroundColor: Colors.transparent),);
+    return Text(errorMessage == "" ? "" : "Humm ? $errorMessage",style: const TextStyle(color: Colors.white));
   }
 
   Widget _submitButton() {
     return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
       onPressed:
           isLogin ? signInWithEmailAndPassword : createUserWithEmailAndPassword,
       child: Text(isLogin ? " Log In" : "Register"),
@@ -84,11 +97,16 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _passButton() {
     return ElevatedButton(
+            style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
       onPressed: () {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => HomePage()));
       },
-      child: Text("Continue as Anonymous User"),
+      child: Text("Continue as an Anonymous User"),
     );
   }
 
@@ -99,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
           isLogin = !isLogin;
         });
       },
-      child: Text(isLogin ? "Register" : "Log In"),
+      child: Text(isLogin ? "Register" : "Log In",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amber),),
     );
   }
 
@@ -107,7 +125,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.green,
           title: _title(),
           automaticallyImplyLeading: false,
         ),

@@ -38,12 +38,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            // Add the desired functionality to handle back navigation
-          },
-        ),
+      automaticallyImplyLeading: false,
         title: _userUid(),
         
         actions: [
@@ -54,7 +49,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: PizzaBottomNavBar(
         onTabChange: (index) => navigateBottomBar(index),
       ),
-      body: _pages[_selectedIndex],
+      body: _pages[_selectedIndex], 
     );
   }
 
@@ -66,19 +61,24 @@ class _HomePageState extends State<HomePage> {
   // }
 
   Widget _signOutButton() {
-    return OutlinedButton(
+    return IconButton(
+      icon: const Icon(Icons.logout_outlined),
       onPressed: signOut,
       style: OutlinedButton.styleFrom(
-        foregroundColor: Colors.white,
-        side: const BorderSide(color: Colors.white),
-      ),
-      child: const Text("Çıkış yap"),
+        foregroundColor: Colors.orange,
+        side: const BorderSide(color: Colors.orange),
+      ), 
+      
     );
   }
 
     Widget _userUid(){
           final User? user = Auth().currentUser;
-    return Text( user?.email ?? "Anonim Kullanıcı");
+    return Center(child: Column(
+      children: [
+        Text( user?.email ?? "Anonymous User"),
+      ],
+    ));
   }
 
   Future<void> signOut() async {

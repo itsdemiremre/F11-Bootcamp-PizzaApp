@@ -26,7 +26,9 @@ class _CartPageState extends State<CartPage> {
                   children: [
                     Text(
                       "Your Cart",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(
+                        color:Colors.deepOrangeAccent,
+                        fontSize: 20),
                     ),
                     const SizedBox(
                       height: 15,
@@ -44,9 +46,12 @@ class _CartPageState extends State<CartPage> {
                         },
                       ),
                     ),
-                    MaterialButton(
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      ),),
                       child: Text("Order and Ask for the Check"),
-                      color: Colors.amber,
                       onPressed: () {},
                     )
                   ],

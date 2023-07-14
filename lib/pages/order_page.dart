@@ -54,7 +54,7 @@ class _OrderPageState extends State<OrderPage> {
     showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: Text('sucsesfully added to card'),
+              title: Text('Sucsesfully added to The Cart'),
             ));
   }
 
@@ -62,7 +62,7 @@ class _OrderPageState extends State<OrderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text(widget.pizza.name)),
+        title: Text(widget.pizza.name),
 
       ),
       backgroundColor: Color.fromARGB(255, 87, 98, 133),
@@ -82,7 +82,7 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Thickness of the Dough"),
+                        child: Text("Thickness of the Dough",style: TextStyle(color: Colors.orange)),
                       ),
                       Expanded(
                         child: Slider(
@@ -98,7 +98,7 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Pepperoni"),
+                        child: Text("Pepperoni",style: TextStyle(color: Colors.orange),),
                       ),
                       Expanded(
                         child: Slider(
@@ -114,7 +114,7 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Green Pepper"),
+                        child: Text("Green Pepper",style: TextStyle(color: Colors.orange)),
                       ),
                       Expanded(
                         child: Slider(
@@ -129,11 +129,14 @@ class _OrderPageState extends State<OrderPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 150,
-                        child: Text("Olive"),
+                        width: 150,                     
+                        child: Text("Olive",style: TextStyle(color: Colors.orange)),
                       ),
                       Expanded(
                         child: Slider(
+                          activeColor: Colors.redAccent,
+                          inactiveColor: Colors.green,
+                          thumbColor: Colors.grey,
                             value: oliveValue,
                             label: oliveValue.toString(),
                             divisions: 1,
@@ -146,7 +149,7 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Mushroom"),
+                        child: Text("Mushroom",style: TextStyle(color: Colors.orange)),
                       ),
                       Expanded(
                         child: Slider(
@@ -165,7 +168,7 @@ class _OrderPageState extends State<OrderPage> {
               width: 150,
               child: Expanded(
                 child: ElevatedButton(
-                  child: Text("Add to card"),
+                  child: Text("Add to the Cart"),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
