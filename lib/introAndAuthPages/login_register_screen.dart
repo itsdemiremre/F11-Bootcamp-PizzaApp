@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _title() {
-    return Center(child: const Text("Pizza App",style: TextStyle(color: Colors.amber),));
+    return Center(child: const Text("Pizza App",style: TextStyle(color: Colors.amber,fontSize: 25),));
   }
 
   Widget _entryField(
@@ -117,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
           isLogin = !isLogin;
         });
       },
-      child: Text(isLogin ? "Register" : "Log In",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amber),),
+      child: Text(isLogin ? "Register" : "Log In",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.amberAccent),),
     );
   }
 

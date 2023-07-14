@@ -24,7 +24,7 @@ class PizzApp extends StatelessWidget {
         borderSide: BorderSide(width: 3, color: Colors.green),
       ),
       focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(width: 3, color: Colors.amber),
+        borderSide: BorderSide(width: 3, color: Colors.redAccent),
       ),
     ),
   ),

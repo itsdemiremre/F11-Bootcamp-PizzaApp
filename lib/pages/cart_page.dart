@@ -52,8 +52,12 @@ class _CartPageState extends State<CartPage> {
                       borderRadius: BorderRadius.circular(12),
                       ),),
                       child: Text("Order and Ask for the Check"),
-                      onPressed: () {},
-                    )
+                      onPressed: () { showDialog(context: context, builder: (context) => AlertDialog(
+                      title: Text('Successfully Ordered. Please wait'),
+                          ),                           
+                      );
+                      }       
+                    ),
                   ],
                 ),
               ),

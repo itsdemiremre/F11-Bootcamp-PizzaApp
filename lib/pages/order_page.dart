@@ -82,10 +82,13 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Thickness of the Dough",style: TextStyle(color: Colors.orange)),
+                        child: Text("Thickness of the Dough",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold)),
                       ),
                       Expanded(
                         child: Slider(
+                          activeColor: Colors.redAccent,
+                          inactiveColor: Colors.green,
+                          thumbColor: Colors.grey,
                             value: thicknessValue,
                             label: thicknessValue.toString(),
                             divisions: 2,
@@ -98,10 +101,13 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Pepperoni",style: TextStyle(color: Colors.orange),),
+                        child: Text("Pepperoni",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold)),
                       ),
                       Expanded(
                         child: Slider(
+                          activeColor: Colors.redAccent,
+                          inactiveColor: Colors.green,
+                          thumbColor: Colors.grey,
                             value: pepperoniValue,
                             label: pepperoniValue.toString(),
                             divisions: 1,
@@ -114,10 +120,13 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Green Pepper",style: TextStyle(color: Colors.orange)),
+                        child: Text("Green Pepper",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold)),
                       ),
                       Expanded(
                         child: Slider(
+                          activeColor: Colors.redAccent,
+                          inactiveColor: Colors.green,
+                          thumbColor: Colors.grey,
                             value: greenPepperValue,
                             label: greenPepperValue.toString(),
                             divisions: 1,
@@ -130,7 +139,7 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,                     
-                        child: Text("Olive",style: TextStyle(color: Colors.orange)),
+                        child: Text("Olive",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold)),
                       ),
                       Expanded(
                         child: Slider(
@@ -149,10 +158,13 @@ class _OrderPageState extends State<OrderPage> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Text("Mushroom",style: TextStyle(color: Colors.orange)),
+                        child: Text("Mushroom",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold)),
                       ),
                       Expanded(
                         child: Slider(
+                          activeColor: Colors.redAccent,
+                          inactiveColor: Colors.green,
+                          thumbColor: Colors.grey,
                             value: mushroomValue,
                             label: mushroomValue.toString(),
                             divisions: 1,
