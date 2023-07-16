@@ -67,7 +67,7 @@ PizzaApp, kullanıcılara pizzanın hamur kalınlığı, içindeki malzemeler ve
 - **Daily Scrum**: Daily Scrum toplantılarının Whatsapp üzerinden duyurulup Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint Daily Scrum Chats](https://docs.google.com/presentation/d/1eS2ZPqx1fkLFwdBlGgpZc4lhdfSvOZ_m2jqD_vlkEXY/)
 
 - **Sprint board update**: Sprint board ekran görüntüsü: 
-  ![Backlog 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/backlog1.png)
+  ![Backlog 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/backlog.png)
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/product1.png)
