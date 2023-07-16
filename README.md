@@ -74,11 +74,13 @@ PizzaApp, kullanıcılara pizzanın hamur kalınlığı, içindeki malzemeler ve
   ![Screenshot 2](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/product2.png)
   
 - **Sprint Review**: 
-Alınan kararlar: Önceki yapmakta olduğumuz uygulama olan [Routeviser](https://github.com/itsdemiremre/GoogleOUA-F11-Bootcamp2023#readme) uygulamasında ilerlememizde, kalan görevleri tamamlamak ve uygulamayı sunuma hazırlayabilmek için yeterli zaman kalmayabileceği değerlendirildi ve takım üyelerinin kişisel yoğunlukları sebebiyle uygulamanın zamanında tamamlanamayabileceği riski olduğu için takımca birlikte karar verilip fikir Pivot edilmiştir. Kalan sürede yeni uygulama yazılmış ve uygulamaya son görünümü verilmiştir. Projeye katılım durumu ve takımın devam etme isteğinin seviyesi göz önünde bulundurularak bu şekilde bitirilme kararı alınmıştır. 
+Alınan kararlar: Önceki [Routeviser](https://github.com/itsdemiremre/GoogleOUA-F11-Bootcamp2023#readme) uygulamasının ilerlemesi sırasında, kalan görevleri tamamlamak ve uygulamayı sunuma hazırlamak için yeterli zamanın olmayabileceği değerlendirildi. Ayrıca, takım üyelerinin kişisel yoğunlukları nedeniyle uygulamanın zamanında tamamlanamama riski olduğu görüldü. Bu nedenle, takım olarak birlikte karar alınarak fikir değişikliği yapıldı yani Pivot edildi. Kalan süre içinde yeni bir uygulama geliştirildi ve son şekli verildi. Takımın katılım durumu ve devam etme isteği göz önüne alınarak, projenin bu şekilde sonlandırılması kararlaştırıldı.
 Sprint Review katılımcıları: Emre Demir, Alperen Köse, Sueda Nur Önder.
 
 - **Sprint Retrospective:**
-  - Takım üyelerinin projenin ilerlemesi açısından projeye katılımının ne kadar önemli ve takım motivasyonuna katkısının ne kadar fazla olduğu, uygulamada yalınlığın ve pratikliğin öncelik ve gerekliliğine vurgu yapılmıştır.
+  - Gelecekteki projelerde, proje başlamadan önce daha kapsamlı bir araştırma yapılmaslı. Bu araştırma süreci, projenin kapsamını, süresini ve risklerini daha iyi anlamak için kullanılmalı.
+  - Ekip üyeleri, düzenli ve etkili iletişimi sağlamak için daha sık araya gelmeli. Proje ilerlemesi, sorunlar ve riskler hakkında düzenli olarak iletişim kurarak herkesin aynı sayfada kalmasını sağlamalı.
+  -  Proje süresi ve iş yükü daha iyi analiz edilerek, daha uygun hedefler belirlenmeli ve takımın başarılı bir şekilde tamamlamak için çalışabileceği projeler seçilmeli.
 ---
 
 ## Product Backlog URL
