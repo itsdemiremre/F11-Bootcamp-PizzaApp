@@ -52,7 +52,7 @@ PizzaApp, kullanıcılara pizzanın hamur kalınlığı, içindeki malzemeler ve
 
 # Sprint 2
 
-  [Projemizi pivot etmeden önce kullandığımız  repomuzda mevcut](https://github.com/itsdemiremre/GoogleOUA-F11-Bootcamp2023#readme)
+  [Projemizi Pivot etmeden önce kullandığımız repomuzda mevcut](https://github.com/itsdemiremre/GoogleOUA-F11-Bootcamp2023#readme)
 
 ## Product Backlog URL
   [Flutter Team Eleven Miro Backlog Board](https://miro.com/app/board/uXjVM9sDRfM=/)
@@ -67,18 +67,18 @@ PizzaApp, kullanıcılara pizzanın hamur kalınlığı, içindeki malzemeler ve
 - **Daily Scrum**: Daily Scrum toplantılarının Whatsapp üzerinden duyurulup Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint Daily Scrum Chats](https://docs.google.com/presentation/d/1eS2ZPqx1fkLFwdBlGgpZc4lhdfSvOZ_m2jqD_vlkEXY/)
 
 - **Sprint board update**: Sprint board ekran görüntüsü: 
-  ![Backlog 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint1Documents/backlog1.png)
+  ![Backlog 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/backlog1.png)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint1Documents/product1.png)
-  ![Screenshot 2](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint1Documents/product2.png)
-  ![Screenshot 3](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint1Documents/product3.png)
+  ![Screenshot 1](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/product1.png)
+  ![Screenshot 2](https://github.com/itsdemiremre/F11-Bootcamp-PizzaApp/blob/main/ProjectManagement/Sprint3Documents/product2.png)
   
 - **Sprint Review**: 
-Alınan kararlar: . Sprint Review katılımcıları: Emre Demir, Zeliş Yıldırım, Sueda Nur Önder.
+Alınan kararlar: Önceki yapmakta olduğumuz uygulama olan [Routeviser](https://github.com/itsdemiremre/GoogleOUA-F11-Bootcamp2023#readme) uygulamasında ilerlememizde, kalan görevleri tamamlamak ve uygulamayı sunuma hazırlayabilmek için yeterli zaman kalmayabileceği değerlendirildi ve takım üyelerinin kişisel yoğunlukları sebebiyle uygulamanın zamanında tamamlanamayabileceği riski olduğu için takımca birlikte karar verilip fikir Pivot edilmiştir. Kalan sürede yeni uygulama yazılmış ve uygulamaya son görünümü verilmiştir. Projeye katılım durumu ve takımın devam etme isteğinin seviyesi göz önünde bulundurularak bu şekilde bitirilme kararı alınmıştır. 
+Sprint Review katılımcıları: Emre Demir, Alperen Köse, Sueda Nur Önder.
 
 - **Sprint Retrospective:**
-  - T.
+  - Takım üyelerinin projenin ilerlemesi açısından projeye katılımının ne kadar önemli ve takım motivasyonuna katkısının ne kadar fazla olduğu, uygulamada yalınlığın ve pratikliğin öncelik ve gerekliliğine vurgu yapılmıştır.
 ---
 
 ## Product Backlog URL
