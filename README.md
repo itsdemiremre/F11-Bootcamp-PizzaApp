@@ -5,9 +5,9 @@ Flutter Eleven
 # Ürün ile İlgili Bilgiler
 
 ## Takım Elemanları
-- Zeliş Yıldırım : Scrum Master - Developer
+- Zeliş Yıldırım : Developer
 - Sueda Nur Önder: Product Owner - Developer
-- Emre Demir: Developer
+- Emre Demir: Scrum Master - Developer
 - Alperen Köse: Developer
 - Emine Çankaya : Aktif Olmayan Üye
 ## Ürün İsmi
